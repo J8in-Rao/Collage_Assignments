@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0.5vw;
+        }
+        main{
+            border: 1px solid  black;
+            
+        }
+        h1{
+            color: red;
+        }
+        label{
+            display: block;
+            color: rgb(20, 143, 106);
+            font-weight: 700;
+        }
+        input, textarea, select{
+            border: none;
+            background-color: rgb(248, 248, 248);
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex label{
+            width: 48%;
+        }
+        .btn{
+            border: 1px solid black;
+        }
+        .inline{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1><u>Registration Form</u></h1>
+        <form action="">
+            <label for="first-name">First Name- <input type="text" id="first-name" name="first-name" required></label>
+            <label for="last-name">Last Name- <input type="text" id="last-name" name="last-name"></label>
+            
+            <label for="dob">Date of Birth -
+                <input type="date" id="dob" name="dob" required>
+            </label>
+            
+            <label for="add">Address
+                <textarea id="add" name="add" rows="1" cols="30"></textarea>
+            </label>
+            
+            <div class="flex">
+            <label for="city">City
+                <select name="city" id="city" required>
+                    <option value="">(select one)</option>
+                    <option value="1">Neemrana</option>
+                    <option value="2">Rewari</option>
+                    <option value="3">Jaipur</option>
+                </select>
+        </label>
+            <label for="State">State
+                <select name="State" id="State" required>
+                    <option value="">(select one)</option>
+                    <option value="1">Rajasthan</option>
+                    <option value="2">Haryana</option>
+                    <option value="3">Delhi</option>
+                </select>
+            </label>
+        </div>
+        <div class="flex">
+            <label for="Country">Country
+                <select name="Country" id="Country" required>
+                    <option value="">(select one)</option>
+                    <option value="1">India</option>
+                <option value="2">South Korea</option>
+                <option value="3">Japan</option>
+            </select>
+        </label>
+        <label for="PinCode">PinCode
+            <select name="PinCode" id="PinCode" required>
+                <option value="">(select one)</option>
+                <option value="1">000001</option>
+                <option value="2">200000</option>
+                <option value="3">300000</option>
+            </select>
+        </label>
+        </div>
+        
+        <label for="gender" class="inline">Gender-</label>
+        <label for="gen-male" class="inline"><input type="radio" id="gen-male" name="gender" checked>Male</label>
+        <label for="gen-female" class="inline"><input type="radio" id="gen-female" name="gender">Female</label>
+        
+        <label for="hobbies">Hobbies-
+            <label for="watchingtv"><input type="checkbox" name="hobbies" id="watchingtv">Watching Tv</label>
+            <label for="playingcricket"><input type="checkbox" name="hobbies" id="playingcricket">Playing Cricket</label>
+            <label for="palyingonlinegames"><input type="checkbox" name="" id="palyingonlinegames">Playing Online Games</label>
+        </label>
+        
+        <input type="submit" class="btn">
+        <input type="reset" class="btn">
+    </form>
+    </main>
+</body>
+</html>
