@@ -1,0 +1,14 @@
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+    font-weight: 800;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    width: 100rem;
+}
+a:hover{
+    background-color: black;
+    color: white;
+}
