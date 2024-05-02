@@ -16,3 +16,14 @@ a:hover{
     color: rgb(22, 1, 20);
     background-color: rgb(196, 209, 219);
 }
+a.emb{
+    max-width: 50%;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+.nav{
+    float: left;
+    width: 20%;
+}
