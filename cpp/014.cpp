@@ -53,7 +53,6 @@ int main(){
 		cout<<"Net salary for each Employee:"<<endl;
 	for(int i = 0; i<n; ++i){
 		cout<<"Employee "<<i+1<<" :";
-		
 		employeeobject[i].dis();
 		cout<<endl;
 	}

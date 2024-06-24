@@ -8,9 +8,9 @@ inline int great(int n1, int n2, int n3){
 
 int main(){
 	int a, b, c;
-	cout<<"Enter Numbers: ";
+	cout<<"Enter three Numbers: ";
 	cin>>a>>b>>c;
 	cout<<"Greatest number is "<<great(a, b, c);
-	
+	return 0;
 	
 }

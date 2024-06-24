@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+</head>
+<body>
+    <span>Enter number</span>
+    <input type="number" name="" id="num">
+    <button onclick="cal()">Get factorial</button>
+    <p id="msg"></p>
+    <script>
+        function cal(){
+            var num = parseInt(document.getElementById("num").value);
+            var factorial = 1;
+
+            if(Number.isNaN(num)||num<0){
+                document.getElementById("msg").innerHTML= "Enter a posi number";
+            }else{
+                for(let i = 1;i<=num;++i){
+                    factorial *=i;
+                }
+            }
+            document.getElementById("msg").innerHTML= factorial;
+        }
+    </script>
+</body>
+</html>

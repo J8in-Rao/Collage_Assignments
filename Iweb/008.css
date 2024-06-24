@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 5% 5%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.content{
+  text-align: center;
+}
+
+h1{
+    cursor: pointer;
+
+    font-weight: 900;
+    font-size: 11vh;
+    transition: 0.8s ease;
+    -webkit-text-stroke: 1px white ;
+  color: transparent;
+}
+
+h1:hover{
+  color: rgb(255, 255, 255);
+}
+
+.content a{
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  transition: 0.8s ease;
+  margin: 1vh 0 0 0;
+  animation: ani 2.5s ease infinite;
+}
+
+.content a:hover{
+  color: black;
+  background: white;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+    .back-video {
+      width: auto;
+      height: 100%;
+    }
+  }
+  
+  @keyframes ani{
+    0%{
+      letter-spacing: 1vw;
+      padding: 3% 0 3% 1vw;
+    }
+    50%{
+      letter-spacing: 4vw;
+      padding: 3% 0 3% 4vw;
+    }
+    100%{
+      letter-spacing: 1vw;
+      padding: 3% 0 3% 1vw;
+    }
+  }

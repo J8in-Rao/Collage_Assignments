@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <span>Enter Base</span>
+    <input type="number" id="base"><br><br>
+    <span>Enter height</span>
+    <input type="number" id="height">
+    <button onclick="cal()">Get Area</button>
+    <span><p id="msg">Reslult will print here
+    </p></span>
+
+
+    <script>
+
+        function cal(){
+            var base= parseInt(document.getElementById("base").value);
+            var height= parseInt(document.getElementById("height").value);
+            if(Number.isNaN(base)||Number.isNaN(base)||base<=0||height<=0){
+                window.alert("Enter proper data")
+            }else{
+               var  area = 0.5*base*height;
+               document.getElementById("msg").innerHTML = area;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

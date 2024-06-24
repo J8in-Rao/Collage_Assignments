@@ -28,7 +28,7 @@ int main(){
 	
 	int index = ls(arr, size, key);
 	if(index != -1){
-	cout <<"Found at index"<<index;
+	cout <<"Found at index "<<index;
 	}else{
 		cout<<"Number not found in the array";
 	}

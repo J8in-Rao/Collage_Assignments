@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <span>Enter number</span>
+    <input type="number" id="num1"><br><br>
+    <span>Enter number</span>
+    <input type="number" id="num2">
+    <span>Enter number</span>
+    <input type="number" id="num3">
+    <button onclick="cal()">Get Greatest</button>
+    <span><p id="msg">Reslult will print here
+    </p></span>
+
+
+    <script>
+
+        function cal(){
+            var a= parseInt(document.getElementById("num1").value);
+            var b= parseInt(document.getElementById("num2").value);
+            var c= parseInt(document.getElementById("num3").value);
+            if(Number.isNaN(a)||Number.isNaN(b)||Number.isNaN(c)){
+                window.alert("Enter proper data")
+            }else{
+                var great = ( (a > b && a > c)?a: (b>c? b :c));
+                document.getElementById("msg").innerHTML= great;
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

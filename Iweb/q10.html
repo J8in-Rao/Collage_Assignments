@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zero,positive,negetive</title>
+</head>
+<body>
+    <span>Enter any number</span>
+    <input type="number" id="num">
+    <button onclick="cal()">Result</button>
+    <span><p id="msg">Reslult will print here
+    </p></span>
+
+
+    <script>
+        function cal(){
+            var a= parseInt(document.getElementById("num").value);
+            if (Number.isNaN(a)){
+                window.alert("Field cannot be empty")
+            }else if(a==0){
+                document.getElementById("msg").innerHTML="Number is 0";
+            }else if(a>0){
+                document.getElementById("msg").innerHTML="Number is positive";
+            }else if(a<0){
+                document.getElementById("msg").innerHTML="Number is negetive";
+            }
+        }
+    </script>
+    
+</body>
+</html>

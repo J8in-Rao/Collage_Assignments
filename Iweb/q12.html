@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <span>Enter age to check eligibility to vote:</span>
+    <input type="number" id="age">
+    <button onclick="checkEligibility()">Check Eligibility</button>
+    <span><p id="msg">Result will print here</p></span>
+
+    <script>
+        function checkEligibility() {
+            var age = parseInt(document.getElementById("age").value);
+
+            if (Number.isNaN(age) || age <= 0 || age > 120 || !Number.isInteger(age)) {
+                window.alert("Please enter a valid age.");
+            } else if (age < 18) {
+                document.getElementById("msg").innerHTML = "Sorry, you are not old enough to vote.";
+            } else {
+                document.getElementById("msg").innerHTML = "You are eligible to vote.";
+            }
+        }
+    </script>
+    
+</body>
+</html>

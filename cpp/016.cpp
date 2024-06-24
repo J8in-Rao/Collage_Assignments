@@ -10,11 +10,7 @@ class SI{
 	public:
 		
 //contructor
-	SI(float p, float r, int t){
-		principal = p;
-		rate = r;
-		time = t;
-	}
+	SI(float p, float r, int t):principal(p),rate(r),time(t){}
 	
 //calculation
 	float cal(){

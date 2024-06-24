@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+<body>
+    <span>Enter Year</span>
+    <input type="number" id="year">
+    <button onclick="cal()">Result</button>
+    <p id="result">Reslut will print here</p>
+
+    <script>
+        function cal(){
+            var a= parseInt(document.getElementById("year").value);
+
+            if(Number.isNaN(a)){
+                window.alert("Enter a year")
+            }else if(a%4==0&&a%100!=0||a%400==0){
+                document.getElementById("result").innerHTML="Year is leap";
+            }else{
+                document.getElementById("result").innerHTML="Year is not leap";
+
+            }
+        }
+    </script>
+</body>
+</html>
